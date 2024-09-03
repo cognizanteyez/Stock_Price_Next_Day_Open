@@ -1,5 +1,10 @@
 Stock Price Forecast based on LSTM
 =====
+## Improvements
+* Improving on [Rays Project]("https://github.com/Ray7788/Stock-Price-Forecast.git")
+* Automated dataset to pull stock prices for various times and dates as well as added multiple stock tickers
+* The program now accepts one value prediction for several companies ie. NVDA, MSFT, TSLA, GOOGL, AMZN, AAPL
+
 Welcome to the Stock Price Forcast with LSTM project. This repository contains code and resources to predict stock prices using Long Short-Term Memory (LSTM) networks. 
 
 # LSTM Overview
@@ -57,6 +62,5 @@ data：`csv` source data
 - Train the model:`python3 train.py`
 - Run the model prediction:`python3 evluteuate.py`
 
-## Contributing
-We welcome contributions from the community. Feel free to fork the repository, make improvements, and create pull requests. 
-if you have questions please contact with ray778@foxmail.com
+## Credits
+[Ray]("https://github.com/Ray7788/Stock-Price-Forecast.git") if you have questions please contact with ray778@foxmail.com
