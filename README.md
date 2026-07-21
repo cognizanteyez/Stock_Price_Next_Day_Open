@@ -1,11 +1,17 @@
-Stock Price Forecast based on LSTM
-=====
+# Stock Price Forecast based on LSTM
+
+> **Project status:** Educational LSTM time-series forecasting project. This repository is a learning artifact, **not investment advice**, a trading signal, or a production trading system.
+
+![Illustrative LSTM stock price forecasting interface](lstm-stock-price-forecasting-interface.png)
+
+*Illustrative educational interface. The displayed values, forecast horizon, chart, model-status indicators, and training metrics are sample visualization content only; they are not investment advice, a recommendation, a trading signal, or evidence of production use.*
+
 ## Improvements
 * Improving on [Rays Project]("https://github.com/Ray7788/Stock-Price-Forecast.git")
 * Automated dataset to pull stock prices for various times and dates as well as added multiple stock tickers
 * The program now accepts one value prediction for several companies ie. NVDA, MSFT, TSLA, GOOGL, AMZN, AAPL
 
-Welcome to the Stock Price Forcast with LSTM project. This repository contains code and resources to predict stock prices using Long Short-Term Memory (LSTM) networks. 
+Welcome to the Stock Price Forcast with LSTM project. This repository contains code and resources to predict stock prices using Long Short-Term Memory (LSTM) networks.
 
 # LSTM Overview
 ## What is LSTM?
@@ -28,10 +34,10 @@ LSTMs work by processing sequential data through a series of these LSTM cells. E
 # Ideas
 * Tushare is a good resource to obtain stock data, praised for its free access. Daily stock price data and daily indicators for over 3,500 stocks were collected and classified into main board, growth board, and small and medium board. Data was merged based on stock and trading date to form the initial dataset.
 * Baostack is also a great Python API, but you need to pay for it...
-* Some suggestions from others(It's meaningful): 
-  * According to personal needs, select the desired data set for training. For example: data with daily limit for two consecutive days is used as a piece of training data; data with daily limit for one day is used as a piece of training data; data with an increase of more than 5% for two consecutive days is used as a piece of training data. 
-  * Use N days of stock data to predict N+1 day stock growth; 
-  * Not every N day of stock data has a good prediction effect on N+1 day data, so we What needs to be concerned about is: N-day data with strong "expressiveness", that is, continuous daily limit, continuous increase of more than 5%, etc.; 
+* Some suggestions from others(It's meaningful):
+  * According to personal needs, select the desired data set for training. For example: data with daily limit for two consecutive days is used as a piece of training data; data with daily limit for one day is used as a piece of training data; data with an increase of more than 5% for two consecutive days is used as a piece of training data.
+  * Use N days of stock data to predict N+1 day stock growth;
+  * Not every N day of stock data has a good prediction effect on N+1 day data, so we What needs to be concerned about is: N-day data with strong "expressiveness", that is, continuous daily limit, continuous increase of more than 5%, etc.;
   * N-day data does not have obvious performance characteristics, so for data with obvious performance characteristics, it is Noise, the more noise, the louder it is, the worse it is for our predictions
 
 
